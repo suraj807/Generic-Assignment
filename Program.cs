@@ -12,17 +12,7 @@ namespace GenericsAssigment
         {
             Console.WriteLine("\nwelcome to Generic value");
 
-            //Console.WriteLine("enter a first integer value");
-            //int firstvalue = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("enter a second integer value");
-            //int secondvalue = Convert.ToInt32(Console.ReadLine());
-            //Console.WriteLine("enter a third integer value");
-            //int thirdvalue = Convert.ToInt32(Console.ReadLine());
-
-            //int maxvalue = findmaximum.Findmaximuminteger(firstvalue, secondvalue, thirdvalue);
-            //Console.WriteLine($"Maxium integer of ({firstvalue},{secondvalue},{thirdvalue}) is : {maxvalue}");
-
-
+           
             Console.WriteLine("enter your choice");
             int ch = Convert.ToInt32(Console.ReadLine());
             switch (ch)
@@ -42,14 +32,30 @@ namespace GenericsAssigment
 
                     case 2:
                     float First, Second, Third;
-                    Console.WriteLine("enter a first integer value");
+                    Console.WriteLine("enter a first float value");
                     First = float.Parse(Console.ReadLine());
-                    Console.WriteLine("enter a second integer value");
+                    Console.WriteLine("enter a second float value");
                     Second = float.Parse(Console.ReadLine());
-                    Console.WriteLine("enter a third integer value");
+                    Console.WriteLine("enter a third float value");
                     Third = float.Parse(Console.ReadLine());
                     float floatmaxvalue = findmaximum.Findmaximumfloat(First, Second, Third);
                     Console.WriteLine($"Maxium float of ({First},{Second},{Third}) is : {floatmaxvalue}");
+                    break;
+
+                    case 3:
+                    string First1, Second2, Third3;
+                    Console.WriteLine("enter a first string value");
+                    First1 = Console.ReadLine();
+                    Console.WriteLine("enter a second string value");
+                    Second2 = Console.ReadLine();
+                    Console.WriteLine("enter a second string value");
+                    Third3 = Console.ReadLine();
+                    string strigmaxvalue = findmaximum.Findmaximumstring(First1, Second2, Third3);
+                    Console.WriteLine($"Maximum string of ({First1},{Second2},{Third3}) is : {strigmaxvalue}");
+              
+
+
+
                     break;
             }
 
