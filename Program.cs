@@ -11,9 +11,11 @@ namespace GenericsAssigment
         static void Main(string[] args)
         {
             Console.WriteLine("\nwelcome to Generic value");
-
-           
             Console.WriteLine("enter your choice");
+            Console.WriteLine("\n 1 integer value");
+            Console.WriteLine("\n 2 float value");
+            Console.WriteLine("\n 3 string value");
+            
             int ch = Convert.ToInt32(Console.ReadLine());
             switch (ch)
             {
@@ -25,7 +27,7 @@ namespace GenericsAssigment
                     second = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("enter a third integer value");
                     third = Convert.ToInt32(Console.ReadLine());
-                    int maxvalue = findmaximum.Findmaximuminteger(first, second, third);
+                    int maxvalue = findmaximum.FindMax(first, second, third);
                     Console.WriteLine($"Maxium integer of ({first},{second},{third}) is : {maxvalue}");
                     break;
 
@@ -38,7 +40,7 @@ namespace GenericsAssigment
                     Second = float.Parse(Console.ReadLine());
                     Console.WriteLine("enter a third float value");
                     Third = float.Parse(Console.ReadLine());
-                    float floatmaxvalue = findmaximum.Findmaximumfloat(First, Second, Third);
+                    float floatmaxvalue = findmaximum.FindMax(First, Second, Third);
                     Console.WriteLine($"Maxium float of ({First},{Second},{Third}) is : {floatmaxvalue}");
                     break;
 
@@ -50,7 +52,7 @@ namespace GenericsAssigment
                     Second2 = Console.ReadLine();
                     Console.WriteLine("enter a second string value");
                     Third3 = Console.ReadLine();
-                    string strigmaxvalue = findmaximum.Findmaximumstring(First1, Second2, Third3);
+                    string strigmaxvalue = findmaximum.FindMax(First1, Second2, Third3);
                     Console.WriteLine($"Maximum string of ({First1},{Second2},{Third3}) is : {strigmaxvalue}");
               
 
