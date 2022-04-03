@@ -32,7 +32,7 @@ namespace GenericsAssigment
                     break;
 
 
-                    case 2:
+              case 2:
                     float First, Second, Third;
                     Console.WriteLine("enter a first float value");
                     First = float.Parse(Console.ReadLine());
@@ -44,7 +44,7 @@ namespace GenericsAssigment
                     Console.WriteLine($"Maxium float of ({First},{Second},{Third}) is : {floatmaxvalue}");
                     break;
 
-                    case 3:
+              case 3:
                     string First1, Second2, Third3;
                     Console.WriteLine("enter a first string value");
                     First1 = Console.ReadLine();
@@ -54,10 +54,9 @@ namespace GenericsAssigment
                     Third3 = Console.ReadLine();
                     string strigmaxvalue = findmaximum.FindMax(First1, Second2, Third3);
                     Console.WriteLine($"Maximum string of ({First1},{Second2},{Third3}) is : {strigmaxvalue}");
-              
-
-
-
+                    break;
+             default:
+                    Console.WriteLine("Enter valid choice");
                     break;
             }
 
